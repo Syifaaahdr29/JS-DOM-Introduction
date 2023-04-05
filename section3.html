@@ -11,5 +11,20 @@
 		<li>Jambu</li>
 		<li>Jeruk</li>
 	</ul>
+	<script>
+		// mendapatkan nilai parent element
+		var listBuah = document.getElementById("daftar-buah");
+		var judul = listBuah.parentNode;
+		console.log("Parent Element: ", judul);
+
+		// mendapatkan nilai child elements
+		var itemsBuah = listBuah.childNodes;
+		console.log("Child Elements: ", itemsBuah);
+
+		// mendapatkan nilai siblings element
+		var itemPisang = document.querySelector("li:nth-child(2)");
+		var siblings = itemPisang.parentNode.childNodes;
+		console.log("Siblings of Pisang: ", siblings);
+	</script>
 </body>
 </html>
