@@ -13,5 +13,20 @@
 	</ul>
     <br>
 	<button onclick="tampilkanDataBuah()">Tampilkan Data Buah</button>
+    <script>
+		function tampilkanDataBuah() {
+			var judul = document.getElementById("judul");
+			var listBuah = document.getElementById("daftar-buah");
+
+			// set attribute
+			judul.setAttribute("style", "color: pink;");
+
+			// get attribute
+			var itemJambu = document.querySelector("li:nth-child(3)");
+			var dataBuahJambu = itemJambu.getAttribute("data-buah");
+
+			alert("Buah kesukaanku adalah buah : " + dataBuahJambu);
+		}
+	</script>
 </body>
 </html>
