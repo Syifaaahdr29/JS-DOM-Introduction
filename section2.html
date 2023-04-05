@@ -14,5 +14,32 @@
       <button type="button" onclick="submitForm()">Submit</button>
     </form>
     <ul id="daftar-nama"></ul>
+    <script>
+        function submitForm() {
+          // Mendapatkan nilai dari elemen input id nama
+          var nama = document.getElementById("nama").value;
+  
+          // Mendapatkan nilai dari elemen input id umur
+          var umur = document.getElementById("umur").value;
+  
+          // Mendapatkan semua elemen li dengan class nama
+          var listNama = document.getElementsByName("nama");
+  
+          // Mendapatkan semua elemen <input>
+          var inputs = document.getElementsByTagName("input");
+  
+          // Menampilkan nilai yang diambil dari input pada halaman
+          console.log("Nama: " + nama);
+          console.log("Umur: " + umur);
+          console.log("Jumlah elemen dengan nama 'nama': " + listNama.length);
+          console.log("Jumlah elemen <input> pada halaman: " + inputs.length);
+  
+          // Menambahkan nama ke dalam daftar nama
+          var daftarNama = document.getElementById("daftar-nama");
+          var li = document.createElement("li");
+          li.textContent = nama + " (" + umur + " tahun)";
+          daftarNama.appendChild(li);
+        }
+      </script>
   </body>
 </html>
