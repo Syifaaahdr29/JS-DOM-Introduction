@@ -22,7 +22,13 @@
 	<label><input type="checkbox" name="programming" value="Javascript" onclick="tambahLog('Kamu memilih Javascript')"> Javascript</label>
 	<label><input type="checkbox" name="programming" value="HTML" onclick="tambahLog('Kamu memilih HTML')"> HTML</label>
 	<label><input type="checkbox" name="programming" value="CSS" onclick="tambahLog('Kamu memilih CSS')"> CSS</label>
-	
-    <div id="log"></div>
+	<div id="log"></div>
+
+	<script>
+		function tambahLog(teks) {
+			var log = document.getElementById("log");
+			log.innerHTML += teks + "<br>";
+		}
+	</script>
 </body>
 </html>
