@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program Sederhana Checkbox dan Radio Button</title>
+</head>
+<body>
+	<h2>Pilihan Jenis Kelamin</h2> <!-- radio button jenis kelamin -->
+	<label><input type="radio" name="gender" value="Laki-laki" onclick="tambahLog('Kamu berjenis kelamin Laki-laki')"> Laki-laki</label>
+	<label><input type="radio" name="gender" value="Perempuan" onclick="tambahLog('Kamu berjenis kelamin Perempuan')"> Perempuan</label>
+
+	<h2>Pilihan Bahasa Pemrograman</h2> <!-- checkbox bahasa pemrograman -->
+	<label><input type="checkbox" name="programming" value="Javascript" onclick="tambahLog('Kamu memilih Javascript')"> Javascript</label>
+	<label><input type="checkbox" name="programming" value="HTML" onclick="tambahLog('Kamu memilih HTML')"> HTML</label>
+	<label><input type="checkbox" name="programming" value="CSS" onclick="tambahLog('Kamu memilih CSS')"> CSS</label>
+	
+    <div id="log"></div>
+</body>
+</html>
