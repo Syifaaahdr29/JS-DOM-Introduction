@@ -12,5 +12,22 @@
 		<li>Jeruk</li>
 	</ul>
 	<button onclick="tambahBuah()">Tambah Buah</button>
+    <script>
+		function tambahBuah() {
+			// mendeklarasikan elemen li atau list
+			var itemBuahBaru = document.createElement("li");
+
+			// mendeklarasikan innerHTML
+			itemBuahBaru.innerHTML = "<strong>Mangga</strong>";
+
+			// menetapkan textContent pada buah mangga
+			var infoBuahBaru = document.createTextNode(" Manis-manis seger!");
+			itemBuahBaru.appendChild(infoBuahBaru);
+
+			// menambahkan elemen mangga didalam list baru
+			var listBuah = document.getElementById("daftar-buah");
+			listBuah.appendChild(itemBuahBaru);
+		}
+	</script>
 </body>
 </html>
