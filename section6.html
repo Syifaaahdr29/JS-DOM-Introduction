@@ -22,5 +22,19 @@
 	</ul>
     <br>
 	<button onclick="ubahTampilan()">Ubah Tampilan</button>
+	<script>
+		function ubahTampilan() {
+			var judul = document.getElementById("judul");
+			var listBuah = document.getElementById("daftar-buah");
+
+			// set style property
+			judul.style.color = "orange";
+			listBuah.style.backgroundColor = "lightyellow";
+
+			// set class name property
+			var itemPisang = document.querySelector("li:nth-child(2)");
+			itemPisang.className = "tebal warna-oranye";
+		}
+	</script>
 </body>
 </html>
